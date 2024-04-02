@@ -1,9 +1,8 @@
-#include "R.h"
-#include "Rdefines.h"
-
 #include "surveygraph.h"
 
-#include <cmath>
+#define R_NO_REMAP
+#include "R.h"
+#include "Rdefines.h"
 
 using namespace std;
 
@@ -14,7 +13,7 @@ void surveygraph::make_threshold_profile_agent()
   target_lcc = 1.00;
   search_threshold_agent_lcc();    // finds optimal threshold
 
-  double optimal_threshold_agent = g_agent.threshold;
+  //double optimal_threshold_agent = g_agent.threshold;
 
   int count = 200;
 
@@ -33,9 +32,9 @@ void surveygraph::make_threshold_profile_agent()
 
     profile_agent.push_back(dummy);
 
-    if(!(g_agent.avg_degree / double(g_agent.n) >= 0 && g_agent.avg_degree / double(g_agent.n) <= 1)){
-      error("an internal test has failed, please report to package creators\n");
-    }
+    //if(!(g_agent.avg_degree / double(g_agent.n) >= 0 && g_agent.avg_degree / double(g_agent.n) <= 1)){
+    //  error("an internal test has failed, please report to package creators\n");
+    //}
   }
 }
 
@@ -47,7 +46,7 @@ void surveygraph::make_threshold_profile_symbolic()
   target_lcc = 0.95;
   search_threshold_symbolic_lcc(); // sets threshold_symbolic to optimal threshold
 
-  double optimal_threshold_symbolic = g_symbolic.threshold;
+  //double optimal_threshold_symbolic = g_symbolic.threshold;
 
   int count = 200;
 
@@ -66,8 +65,8 @@ void surveygraph::make_threshold_profile_symbolic()
 
     profile_symbolic.push_back(dummy);
 
-    if(!(g_symbolic.avg_degree / double(g_symbolic.n) >= 0 && g_symbolic.avg_degree / double(g_symbolic.n) <= 1)){
-      error("an internal test has failed, please report to package creators\n");
-    }
+    //if(!(g_symbolic.avg_degree / double(g_symbolic.n) >= 0 && g_symbolic.avg_degree / double(g_symbolic.n) <= 1)){
+    //  error("an internal test has failed, please report to package creators\n");
+    //}
   }
 }

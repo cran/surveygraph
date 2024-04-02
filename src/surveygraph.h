@@ -6,6 +6,7 @@
 #include <vector>
 #include <map>
 #include <set>
+#include <cmath>
 
 using namespace std;
 
@@ -14,14 +15,14 @@ class surveygraph
   public :
     surveygraph(vector<vector<double>> &a){
       survey = a;
-      nrow = survey.size();
-      ncol = survey[0].size();  // will have verified dimensions in R routines
+      nrow = int(survey.size());
+      ncol = int(survey[0].size());  // will have verified dimensions in R routines
     }
 
     surveygraph(vector<vector<double>> &a, int b, double c, int d){
       survey = a;
-      nrow = survey.size();
-      ncol = survey[0].size();  // verify dimensions in R routines
+      nrow = int(survey.size());
+      ncol = int(survey[0].size());  // verify dimensions in R routines
 
       // b is threshold method flag
       if(b == 0){        // method is target lcc

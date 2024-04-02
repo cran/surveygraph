@@ -1,6 +1,6 @@
 Package: surveygraph
 Title: Network Representations of Attitudes
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person("Samuel", "Unicomb", , "samuelunicomb@gmail.com", role = c("aut", "cre")),
     person("Alejandro", "Dinkelberg", role = "aut"),
@@ -21,9 +21,9 @@ Description: A tool for computing network representations of attitudes,
   a survey as a bipartite network, we measure the similarity between
   respondents and survey items to produce network edges. We do this in both a
   respondent network, as well as a survey item network. Used in combination
-  with graph visualisation libraries, this techniques helps practitioners in the
+  with graph visualisation libraries, this technique helps practitioners in the
   social sciences identify network structure that may be present within a
-  survey at a glance.
+  survey.
 Depends: R (>= 2.15.1)
 URL: https://surveygraph.ie/
 BugReports: https://github.com/surveygraph/surveygraphr/issues
@@ -31,8 +31,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 Suggests: covr, ggplot2, igraph, knitr, rmarkdown, testthat (>= 3.0.0)
-VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2024-03-09 11:57:33 UTC; sam
+Packaged: 2024-04-01 16:03:45 UTC; samuelunicomb
 Repository: CRAN
-Date/Publication: 2024-03-11 15:00:02 UTC
+Date/Publication: 2024-04-02 12:10:02 UTC

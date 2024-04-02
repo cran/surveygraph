@@ -1,9 +1,8 @@
-#include "R.h"
-#include "Rdefines.h"
-
 #include "surveygraph.h"
 
-#include <cmath>
+#define R_NO_REMAP
+#include "R.h"
+#include "Rdefines.h"
 
 using namespace std;
 
@@ -93,9 +92,9 @@ void surveygraph::max_threshold_agent(double t, int l)
 
   g_agent = graph(0, threshold, survey);
 
-  if(l != g_agent.lcc){
-    error("an internal test has failed, please report to package creators\n");
-  }
+  //if(l != g_agent.lcc){
+  //  error("an internal test has failed, please report to package creators\n");
+  //}
 }
 
 void surveygraph::search_threshold_agent_ad()

@@ -1,10 +1,8 @@
 #include "surveygraph.h"
-#include "graph.h"
 
+#define R_NO_REMAP
 #include "R.h"
 #include "Rdefines.h"
-
-#include <cmath>
 
 using namespace std;
 
@@ -16,8 +14,8 @@ void graph::build_graph(const surveydef &S)
 
   e = 0;
   avg_degree = 0;
-  for(unsigned int i = 0; i < n; ++i){
-    for(unsigned int j = i + 1; j < n; ++j){
+  for(int i = 0; i < n; ++i){
+    for(int j = i + 1; j < n; ++j){
       double w = 0.0;
       man_distance(S, int(i), int(j), w);
       if(w > threshold){
