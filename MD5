@@ -1,4 +1,4 @@
-652c33ec6b18f46a4cf050e0739c0539 *DESCRIPTION
+66d35039252cabda7d0385bc11cba998 *DESCRIPTION
 d8ffea1af9735bc45d0d30f86728afb7 *LICENSE
 d74ebeff5b21fd7eac31d5c5a2d15c23 *NAMESPACE
 aab05ad87d8f2021fc422203b4c12dd5 *NEWS.md
@@ -6,7 +6,7 @@ aab05ad87d8f2021fc422203b4c12dd5 *NEWS.md
 956afd954b027d5e57b746d69c0814ec *R/surveygraph.R
 64195569e8a438c3286f3e556ab5edea *R/synthetic-data.R
 ff2c55b67b3279207b73bd19b34bb3d3 *R/threshold-profile.R
-33286e85bced69536ac96b72cd26f37e *README.md
+e3b184f2c7fc10fc1a57c94d5066e46d *README.md
 c0bb7886ca3077ada4096817eece883d *inst/extdata/survey1.dat
 538d8c33b96c32d8b739edba09b7a768 *inst/extdata/survey2.dat
 0589ea4b04fe587195f2eb0e3dab813b *man/figures/eg1.jpg
